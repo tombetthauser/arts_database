@@ -1,93 +1,81 @@
 from tkinter.ttk import *
-from tkinter import *
 from tkinter import ttk
-# from tkinter.ttk import *
+from tkinter import *
 import webbrowser
-
-
-
 
 window = Tk()
 
 window.title("Arts Database Explorer 1.0")
-window.geometry('1050x760')
-window.configure(bg='#dedede')
 window.resizable(width=False, height=False)
+window.configure(bg='#dedede')
+window.geometry('1050x760')
 
 Label(window, bg="#dedede", height=1).grid(row=0, column=0, columnspan=11)
-
 Label(window, bg="#dedede", width=2).grid(row=0, column=0, rowspan=15)
 
-Label(
-  window, 
+Label(window, 
   text="Arts Database Explorer 1.0", 
-  width=73, 
-  fg="black", 
-  bg="white", 
   font='Times 25', 
   relief=SUNKEN, 
+  borderwidth=6,
+  fg="black", 
+  bg="white", 
+  width=73, 
   anchor=W, 
   padx=20, 
   pady=20, 
-  borderwidth=6
 ).grid(row=1, column=1, columnspan=9)
 
 Label(window, bg="#dedede", height=1).grid(row=2, column=0, columnspan=11)
 
-Label(
-  window, 
+Label(window, 
   text="A desktop explorer for the State of the Arts 2019 survey results.", 
-  width=119, 
-  fg="black", 
-  bg="white", 
   font='Times 16', 
   relief=SUNKEN, 
+  borderwidth=4,
+  fg="black", 
+  bg="white", 
+  width=119, 
   anchor=W, 
   padx=20, 
   pady=10, 
-  borderwidth=4
 ).grid(row=3, column=1, columnspan=9)
 
 Label(window, bg="#dedede", height=1).grid(row=4, column=0, columnspan=11)
 
-Button(
-  window, 
-  text='VIEW ALL COLUMNS', 
+Button(window, 
   highlightbackground='#777',
-  width=18,
-  anchor=W,
+  text='VIEW ALL COLUMNS', 
   cursor='hand2',
+  anchor=W,
+  width=18,
 ).grid(row='5', column='1')
 
-Button(
-  window, 
-  text='RUN QUERY', 
+Button(window, 
   highlightbackground='#64935e',
-  width=18,
-  anchor=W,
+  text='RUN QUERY', 
   cursor='hand2',
+  anchor=W,
+  width=18,
 ).grid(row='5', column='3')
 
-Button(
-  window, 
-  text='CLEAR QUERY', 
+Button(window, 
   highlightbackground='#935e5e',
-  width=18,
-  anchor=W,
+  text='CLEAR QUERY', 
   cursor='hand2',
+  anchor=W,
+  width=18,
 ).grid(row='5', column='5')
 
-Button(
-  window, 
-  text='SAVE RESULTS', 
+Button(window, 
   highlightbackground='#777',
-  width=18,
-  anchor=W,
+  text='SAVE RESULTS', 
   cursor='hand2',
+  anchor=W,
+  width=18,
 ).grid(row='5', column='7')
 
-Button(
-  window, 
+Button(window, 
   highlightbackground='#777',
   command=window.destroy,
   cursor='hand2',
@@ -96,9 +84,7 @@ Button(
   width=18,
 ).grid(row='5', column='9')
 
-# Label(window, height=1, bg='#dedede').grid(row='6', column='0', columnspan=11)
-
-Label(
+Label(window,
   text="Enter your SQL query here:",
   font='Times 16',
   bg='#dedede',
@@ -116,13 +102,13 @@ Entry(window,
   width=108, 
 ).grid(row=8, column=1, columnspan=9)
 
-Label(
+Label(window,
   text="Below are your query results:",
   font='Times 16',
   bg='#dedede',
-  pady=15,
   anchor=W,
   width=23,
+  pady=15,
 ).grid(row=10, column=1)
 
 Listbox(window,
@@ -139,9 +125,9 @@ def callback(url): webbrowser.open_new(url)
 
 link1 = Button(
     window,
+    text='Visit Survey Page',
     highlightbackground='#bbb',
     cursor='hand2',
-    text='Visit Survey Page',
     anchor=W,
     width=18,
 )
@@ -150,9 +136,9 @@ link1.grid(row=13, column=1)
 
 link2 = Button(
     window,
+    text='GitHub Project Page',
     highlightbackground='#bbb',
     cursor='hand2',
-    text='GitHub Project Page',
     anchor=W,
     width=18,
 )
@@ -161,9 +147,9 @@ link2.grid(row=13, column=3)
 
 link3 = Button(
     window,
+    text='Learn Basic SQL',
     highlightbackground='#bbb',
     cursor='hand2',
-    text='Learn Basic SQL',
     anchor=W,
     width=18,
 )
