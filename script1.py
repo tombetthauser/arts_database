@@ -1,11 +1,10 @@
+from tkinter.ttk import *
 from tkinter import *
 from tkinter import ttk
+# from tkinter.ttk import *
 import webbrowser
 
-def callback(url):
-    webbrowser.open_new(url)
-    ## To open local files:
-    # webbrowser.open_new(r"file://c:\test\test.csv")
+
 
 
 window = Tk()
@@ -15,28 +14,54 @@ window.geometry('1050x750')
 window.configure(bg='#dedede')
 window.resizable(width=False, height=False)
 
-# link1 = Label(window, text="Google Hyperlink", fg="blue", cursor="hand2")
-# link1.pack()
-# link1.bind("<Button-1>", lambda e: callback("http://www.google.com"))
-# link1.grid(row=4, column=0)
+padrow0 = Label(window, text="", bg="#dedede", height=1)
+padrow0.grid(row=0, column=0, columnspan=11)
 
-# title_style = ttk.Style()
-# title_style.configure("MainTitle", foreground="red", background="black")
+padcol0 = Label(window, text="", bg="#dedede", width=2)
+padcol0.grid(row=0, column=0, rowspan=15)
 
-l0 = Label(window, text="Arts Database Explorer 1.0", width=65, fg="black", bg="white", font='Times 25', relief=SUNKEN, anchor=W, padx=20, pady=20, borderwidth=6)
-l0.pack(padx=30, pady=[20,10])
-l0.pack(fill=X, padx=[35,35])
+top_label = Label(window, text="Arts Database Explorer 1.0", width=73, fg="black", bg="white", font='Times 25', relief=SUNKEN, anchor=W, padx=20, pady=20, borderwidth=6)
+top_label.grid(row=1, column=1, columnspan=9)
+# l0.pack(padx=30, pady=[20,10])
+# l0.pack(fill=X, padx=[35,35])
 
 l0 = Label(window, text="A desktop explorer for the State of the Arts 2019 survey results.", width=65, fg="black", bg="white", font='Times 16', relief=SUNKEN, anchor=W, padx=20, pady=15, borderwidth=4)
-l0.pack(padx=30, pady=[0,20])
-l0.pack(fill=X, padx=[35,35])
+# l0.pack(padx=30, pady=[0,20])
+# l0.pack(fill=X, padx=[35,35])
 # l0.grid(row=1, column=1)
 
-# close = Button(window, text="CLOSE", width=12)
-# close.pack(side=LEFT, pady=[20,20], padx=[35,35])
 
-# close2 = Button(window, text="CLOSE", width=12)
-# close2.pack(side=LEFT, pady=[20,20], padx=[35,35])
+# style = Style()
+# style.configure('W.TButton', font=('calibri', 10, 'bold', 'underline'),
+#                 foreground='black')
+
+# close = Button(window, text="CLOSE", width=12, command=window.destroy, highlightbackground="#999", font="Arial 14")
+# close.pack(side=BOTTOM, pady=[20,20], padx=[35,5])
+
+
+
+# Style will be reflected only on
+# this button because we are providing
+# style only on this Button.
+# ''' Button 1'''
+# btn1 = Button(root, text='Quit !',
+#               style='W.TButton',
+#               command=root.destroy)
+# btn1.grid(row=0, column=3, padx=100)
+
+# ''' Button 2'''
+# btn2 = Button(root, text='Click me !', command=None)
+# btn2.grid(row= 1, column = 3, pady = 10, padx = 100)
+
+
+
+
+
+
+
+
+
+
 
 # l1 = Label(window, text="Enter your SQL query here:")
 # l1.grid(row=0, column=0)
@@ -49,6 +74,7 @@ l0.pack(fill=X, padx=[35,35])
 # e1.grid(row=1, column=0)
 
 # result_box = Listbox(window, height=10, width=50)
+# result_box.pack(fill=X)
 # result_box.grid(row=3, column=0, rowspan=6, columnspan=1)
 
 # scroll_bar = Scrollbar(window)
@@ -58,3 +84,25 @@ l0.pack(fill=X, padx=[35,35])
 # scroll_bar.configure(command=result_box.yview)
 
 window.mainloop()
+
+
+
+
+
+
+
+
+### LINKS
+
+# def callback(url):
+#     webbrowser.open_new(url)
+#     ## To open local files:
+#     # webbrowser.open_new(r"file://c:\test\test.csv")
+
+# link1 = Label(window, text="Google Hyperlink", fg="blue", cursor="hand2")
+# link1.pack()
+# link1.bind("<Button-1>", lambda e: callback("http://www.google.com"))
+# link1.grid(row=4, column=0)
+
+# title_style = ttk.Style()
+# title_style.configure("MainTitle", foreground="red", background="black")
