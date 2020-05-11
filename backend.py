@@ -1,16 +1,47 @@
 import sqlite3
 
-def connect():
-  conn=sqlite3.connect("data.db")
-  cur=conn.cursor()
-  # cur.execute("CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)")
-  conn.commit()
-  conn.close()
+# def connect():
+#   conn=sqlite3.connect('data.db')
+#   cur=conn.cursor()
+#   # cur.execute('CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)')
+#   conn.commit()
+#   conn.close()
 
-def view():
-  conn=connect.sqlite3("data.db")
+def all_rows():
+  conn=sqlite3.connect('data.db')
   cur=conn.cursor()
-  cur.execute("SELECT * FROM data")
+  cur.execute('SELECT * FROM data;')
+  rows=cur.fetchall()
   conn.close()
+  return rows
 
-connect()
+def total_count():
+  conn=sqlite3.connect('data.db')
+  cur=conn.cursor()
+  cur.execute('SELECT COUNT(*) FROM data;')
+  rows=cur.fetchall()
+  conn.close()
+  return rows
+
+def user_query(query):
+  semicolon = query[len(query)-1]
+  if (semicolon != ';'): query = query + ';'
+  conn=sqlite3.connect('data.db')
+  cur=conn.cursor()
+  cur.execute(query)
+  rows=cur.fetchall()
+  conn.close()
+  return rows
+
+
+# def search(query_string):
+#   conn=sqlite.connect('data.db')
+#   cur = conn.cursor()
+#   cur.execute(query_string)
+#   conn.fetchall()
+#   return rows
+
+# connect()
+# insert('Necromancer', 'Willy Gibson', 1987, 23415122)
+# print(view())
+print(user_query('SELECT COUNT(*) FROM data'))
