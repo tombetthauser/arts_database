@@ -22,13 +22,12 @@ padcol0.grid(row=0, column=0, rowspan=15)
 
 top_label = Label(window, text="Arts Database Explorer 1.0", width=73, fg="black", bg="white", font='Times 25', relief=SUNKEN, anchor=W, padx=20, pady=20, borderwidth=6)
 top_label.grid(row=1, column=1, columnspan=9)
-# l0.pack(padx=30, pady=[20,10])
-# l0.pack(fill=X, padx=[35,35])
 
-l0 = Label(window, text="A desktop explorer for the State of the Arts 2019 survey results.", width=65, fg="black", bg="white", font='Times 16', relief=SUNKEN, anchor=W, padx=20, pady=15, borderwidth=4)
-# l0.pack(padx=30, pady=[0,20])
-# l0.pack(fill=X, padx=[35,35])
-# l0.grid(row=1, column=1)
+padrow1 = Label(window, text="", bg="#dedede", height=1)
+padrow1.grid(row=2, column=0, columnspan=11)
+
+subtitle_label = Label(window, text="A desktop explorer for the State of the Arts 2019 survey results.", width=119, fg="black", bg="white", font='Times 16', relief=SUNKEN, anchor=W, padx=20, pady=10, borderwidth=4)
+subtitle_label.grid(row=3, column=1, columnspan=9)
 
 
 # style = Style()
