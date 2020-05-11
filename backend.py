@@ -7,4 +7,10 @@ def connect():
   conn.commit()
   conn.close()
 
+def view():
+  conn=connect.sqlite3("data.db")
+  cur=conn.cursor()
+  cur.execute("SELECT * FROM data")
+  conn.close()
+
 connect()
