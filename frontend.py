@@ -3,20 +3,40 @@ from tkinter import ttk
 from tkinter import *
 import webbrowser
 import backend
+import os
+
+def clear_all():
+    results_box.delete(0, END)
+    query_text.set("")
 
 def all_columns():
+  results_box.delete(0, END)
   for row in backend.all_columns():
     results_box.insert(END, row)
 
 def all_rows():
+  results_box.delete(0, END)
   for row in backend.all_rows():
+    print(type(row))
     results_box.insert(END, row)
 
-def clear_all():
-    results_box.delete(0, END)
+def save_results():
+  print('-------------')
+  print(query_text.get())
+  print(type(query_text.get()))
+  print('-------------')
+  os.system(f"echo `{str(query_text.get())}` >> saved_queries.txt")
+  for ele in results_box.get(0, END):
+    os.system(f"echo `{ele}` >> saved_queries.txt")
+  # os.system(f'echo "{results_box.get(ACTIVE)}" >> saved_queries.txt"')
+
+def run_query():
+  results_box.delete(0, END)
+  for row in backend.user_query(query_text.get()):
+    results_box.insert(END, str(row))
 
 window = Tk()
-
+# SELECT `What is your ethnicity / race?`, `Do you feel you were generally welcomed and embraced by the art world this past year?` FROM data ORDER BY `What is your ethnicity / race?`;
 window.title("Arts Database Explorer 1.0")
 window.resizable(width=False, height=False)
 window.configure(bg='#dedede')
@@ -67,6 +87,7 @@ Button(window,
 Button(window, 
   highlightbackground='#64935e',
   text='RUN QUERY', 
+  command=run_query,
   cursor='hand2',
   anchor=W,
   width=18,
@@ -83,6 +104,7 @@ Button(window,
 
 Button(window, 
   highlightbackground='#777',
+  command=save_results,
   text='SAVE RESULTS', 
   cursor='hand2',
   anchor=W,
