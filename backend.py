@@ -30,6 +30,7 @@ def format_query(query):
     lastchar = query[len(query)-1]
     if (lastchar != ';'): 
       query = query + ';'
+    return query
     # try:
     #   int(query.split(" ")[1])
     #   # replace numbers with column names

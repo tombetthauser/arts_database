@@ -1,9 +1,31 @@
+from random import random
+from random import seed
 from tkinter.ttk import *
 from tkinter import ttk
 from tkinter import *
 import webbrowser
 import backend
 import os
+
+from random import seed
+from random import random
+from random import choice
+seed(1)
+
+questions_list = list(
+  map(lambda name: 
+      " ".join(name.split(" ")[1:]
+    ), list(backend.all_columns())
+  )
+)
+# print(questions_list)
+
+def random_question():
+  # sequence = [i for i in range(len(questions_list))]
+  question = choice(questions_list)
+  while (question.split(" ")[0] == "blank"):
+    question = choice(questions_list)
+  return question
 
 def clear_all():
     results_box.delete(0, END)
@@ -37,7 +59,9 @@ def run_query():
 
 def show_example():
   results_box.delete(0, END)
-  query_text.set("")
+  q1 = random_question()
+  q2 = random_question()
+  query_text.set(f"SELECT `{q1}`, `{q2}` FROM data ORDER BY `{q1}`;")
 
 window = Tk()
 # SELECT `What is your ethnicity / race?`, `Do you feel you were generally welcomed and embraced by the art world this past year?` FROM data ORDER BY `What is your ethnicity / race?`;
@@ -110,7 +134,7 @@ Button(window,
 Button(window, 
   highlightbackground='#777',
   command=show_example,
-  text='EXAMPLE QUERY', 
+  text='RANDOM QUERY', 
   cursor='hand2',
   anchor=W,
   width=18,
