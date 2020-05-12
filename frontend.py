@@ -4,12 +4,16 @@ from tkinter import *
 import webbrowser
 import backend
 
-def view_command():
+def all_columns():
+  for row in backend.all_columns():
+    results_box.insert(END, row)
+
+def all_rows():
   for row in backend.all_rows():
     results_box.insert(END, row)
 
 def clear_all():
-    results_box.delete(0, 'end')
+    results_box.delete(0, END)
 
 window = Tk()
 
@@ -54,7 +58,7 @@ Label(window, bg="#dedede", height=1).grid(row=4, column=0, columnspan=11)
 Button(window, 
   highlightbackground='#777',
   text='VIEW ALL COLUMNS', 
-  command=view_command,
+  command=all_columns,
   cursor='hand2',
   anchor=W,
   width=18,

@@ -1,11 +1,13 @@
 import sqlite3
 
-# def connect():
-#   conn=sqlite3.connect('data.db')
-#   cur=conn.cursor()
-#   # cur.execute('CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)')
-#   conn.commit()
-#   conn.close()
+def all_columns():
+  conn=sqlite3.connect('data.db')
+  cur=conn.cursor()
+  cur.execute('PRAGMA table_info(data);')
+  rows=cur.fetchall()
+  rows = map(lambda col: f'{col[0]}: {col[1]}', rows)
+  conn.close()
+  return rows
 
 def all_rows():
   conn=sqlite3.connect('data.db')
@@ -38,16 +40,3 @@ def enforce_semicolon(query):
       return query + ';'
     else:
       return query
-
-
-# def search(query_string):
-#   conn=sqlite.connect('data.db')
-#   cur = conn.cursor()
-#   cur.execute(query_string)
-#   conn.fetchall()
-#   return rows
-
-# connect()
-# insert('Necromancer', 'Willy Gibson', 1987, 23415122)
-# print(view())
-# print(user_query('SELECT COUNT(*) FROM data'))
