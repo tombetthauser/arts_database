@@ -29,7 +29,6 @@ questions_list = list(
 # print(questions_list)
 
 def random_question():
-  # sequence = [i for i in range(len(questions_list))]
   question = choice(questions_list)
   while (question.split(" ")[0] == "blank"):
     question = choice(questions_list)
@@ -69,7 +68,7 @@ def show_example():
   results_box.delete(0, END)
   q1 = random_question()
   q2 = random_question()
-  query_text.set(f"SELECT `{q1}`, `{q2}` FROM data ORDER BY `{q1}`;")
+  query_text.set(f"SELECT {q1}, {q2} FROM data ORDER BY {q1};")
 
 window = Tk()
 
