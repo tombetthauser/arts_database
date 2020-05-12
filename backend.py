@@ -25,12 +25,34 @@ def total_count():
   conn.close()
   return rows
 
+def int_process(element):
+  try:
+    int(element)
+    return f"`{element}`"
+  except:
+    try:
+      int(element[0:len(element)-1])
+      last_char = element[len(element)-1]
+      num_string = element[0:len(element)-1]
+      if (last_char == ','):
+        return f"`{num_string}`,"
+      elif (last_char == ';'):
+        return f"`{num_string}`;"
+      else:
+        raise
+    except:
+      return f"{element}"
+
+
 def format_query(query):
-    query = str(query)
-    lastchar = query[len(query)-1]
-    if (lastchar != ';'): 
-      query = query + ';'
-    return query
+  query = str(query)
+  lastchar = query[len(query)-1]
+  if (lastchar != ';'): 
+    query = query + ';'
+
+  query = " ".join(map(lambda ele: int_process(ele), query.split(" ")))
+  return query
+
     # try:
     #   int(query.split(" ")[1])
     #   # replace numbers with column names
