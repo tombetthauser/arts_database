@@ -2,6 +2,14 @@ from tkinter.ttk import *
 from tkinter import ttk
 from tkinter import *
 import webbrowser
+import backend
+
+def view_command():
+  for row in backend.all_rows():
+    results_box.insert(END, row)
+
+def clear_all():
+    results_box.delete(0, 'end')
 
 window = Tk()
 
@@ -46,6 +54,7 @@ Label(window, bg="#dedede", height=1).grid(row=4, column=0, columnspan=11)
 Button(window, 
   highlightbackground='#777',
   text='VIEW ALL COLUMNS', 
+  command=view_command,
   cursor='hand2',
   anchor=W,
   width=18,
@@ -62,6 +71,7 @@ Button(window,
 Button(window, 
   highlightbackground='#935e5e',
   text='CLEAR QUERY', 
+  command=clear_all,
   cursor='hand2',
   anchor=W,
   width=18,
@@ -111,13 +121,14 @@ Label(window,
   pady=15,
 ).grid(row=10, column=1)
 
-Listbox(window,
+results_box = Listbox(window,
   highlightthickness=0,
   borderwidth=10,
   relief=FLAT, 
   height= 18, 
   width=108, 
-).grid(row=11, column=1, columnspan=9)
+)
+results_box.grid(row=11, column=1, columnspan=9)
 
 Label(window, bg="#dedede", height=0, pady=1).grid(row=12, column=0, columnspan=11)
 
