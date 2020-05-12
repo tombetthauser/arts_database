@@ -20,23 +20,28 @@ def all_rows():
     print(type(row))
     results_box.insert(END, row)
 
-def save_results():
-  print('-------------')
-  print(query_text.get())
-  print(type(query_text.get()))
-  print('-------------')
-  os.system(f"echo `{str(query_text.get())}` >> saved_queries.txt")
-  for ele in results_box.get(0, END):
-    os.system(f"echo `{ele}` >> saved_queries.txt")
-  # os.system(f'echo "{results_box.get(ACTIVE)}" >> saved_queries.txt"')
+# def save_results():
+#   print('-------------')
+#   print(query_text.get())
+#   print(type(query_text.get()))
+#   print('-------------')
+#   os.system(f"echo `{str(query_text.get())}` >> saved_queries.txt")
+#   for ele in results_box.get(0, END):
+#     os.system(f"echo `{e}` >> saved_queries.txt")
+#   # os.system(f'echo "{results_box.get(ACTIVE)}" >> saved_queries.txt"')
 
 def run_query():
   results_box.delete(0, END)
   for row in backend.user_query(query_text.get()):
     results_box.insert(END, str(row))
 
+def show_example():
+  results_box.delete(0, END)
+  query_text.set("")
+
 window = Tk()
 # SELECT `What is your ethnicity / race?`, `Do you feel you were generally welcomed and embraced by the art world this past year?` FROM data ORDER BY `What is your ethnicity / race?`;
+# SELECT `What 5 - 15 key words would you currently associate with your artwork, subject matters, mediums etc? Separate with commas. (i.e. figurative, muted color, social issues, air brush, interdisciplinary etc.)` FROM data WHERE `1: What is your gender?` LIKE `% emale %`;
 window.title("Arts Database Explorer 1.0")
 window.resizable(width=False, height=False)
 window.configure(bg='#dedede')
@@ -104,12 +109,21 @@ Button(window,
 
 Button(window, 
   highlightbackground='#777',
-  command=save_results,
-  text='SAVE RESULTS', 
+  command=show_example,
+  text='EXAMPLE QUERY', 
   cursor='hand2',
   anchor=W,
   width=18,
 ).grid(row='5', column='7')
+
+# Button(window, 
+#   highlightbackground='#777',
+#   command=save_results,
+#   text='SAVE RESULTS', 
+#   cursor='hand2',
+#   anchor=W,
+#   width=18,
+# ).grid(row='5', column='7')
 
 Button(window, 
   highlightbackground='#777',

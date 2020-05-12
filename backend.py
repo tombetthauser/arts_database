@@ -29,9 +29,16 @@ def format_query(query):
     query = str(query)
     lastchar = query[len(query)-1]
     if (lastchar != ';'): 
-      return query + ';'
-    else:
-      return query
+      query = query + ';'
+    # try:
+    #   int(query.split(" ")[1])
+    #   # replace numbers with column names
+    #   # return the new query
+    # except: 
+    #   # return the query
+
+# in the processing of the csv --> sqlite3 to have integer column headings and make a seperate lookup dictionary for the question strings
+
 
 def user_query(query):
   query = format_query(query)
