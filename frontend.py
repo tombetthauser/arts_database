@@ -68,7 +68,7 @@ def show_example():
   results_box.delete(0, END)
   q1 = random_question()
   q2 = random_question()
-  query_text.set(f"SELECT {q1}, {q2} FROM data ORDER BY {q1};")
+  query_text.set(f"SELECT `{q1}`, `{q2}` FROM data ORDER BY `{q1}`;")
 
 window = Tk()
 
