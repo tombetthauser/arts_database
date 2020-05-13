@@ -65,7 +65,7 @@ def translate_query(query_string):
 def translate_element(element):
   try:
     int(element)
-    return state['QUESTIONS'][int(element)]
+    return f"{int(element)}: {state['QUESTIONS'][int(element)]}"
   except:
     return element
 
@@ -79,18 +79,22 @@ def run_query():
         results_box.insert(END, ele[1:len(ele)])
       else:
         results_box.insert(END, ele)
-        
+
   results_box.insert(END, '')
   results_box.insert(END, '-------------------------------------------------------')
   results_box.insert(END, '')
-  
+
   for row in backend.user_query(query):
     results_box.insert(END, str(row))
 
 def show_example():
   results_box.delete(0, END)
   q1 = random_question()
+  while (state["QUESTIONS"][int(q1)][0:5] == "blank"):
+    q1 = random_question()
   q2 = random_question()
+  while (state["QUESTIONS"][int(q2)][0:5] == "blank"):
+    q2 = random_question()
   query_string = f"SELECT `{q1}`, `{q2}` FROM data ORDER BY `{q1}`;"
   state['current_query'] = query_string
   query_text.set(query_string)
