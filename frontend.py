@@ -74,8 +74,13 @@ def run_query():
   state["current_query"] = query
   results_box.delete(0, END)
   for ele in translate_query(query):
-    if (len(ele) > 1):
-      results_box.insert(END, ele)
+    if (len(ele) > 2):
+      if (ele[0] == " "):
+        results_box.insert(END, ele[1:len(ele)])
+      else:
+        results_box.insert(END, ele)
+
+        
   results_box.insert(END, '-------------------------------------------------------')
   for row in backend.user_query(query):
     results_box.insert(END, str(row))
