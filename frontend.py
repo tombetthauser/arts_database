@@ -38,7 +38,7 @@ def clear_all():
 def all_columns():
   results_box.delete(0, END)
   for row in backend.all_columns():
-    results_box.insert(END, row)
+    results_box.insert(END, f'{row.split(":")[0]}: {state["QUESTIONS"][int(row.split(":")[0])]}')
 
 def all_rows():
   results_box.delete(0, END)
