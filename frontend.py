@@ -86,7 +86,11 @@ def run_query():
   results_box.insert(END, '')
 
   for row in backend.user_query(query):
-    results_box.insert(END, str(row))
+    trimmed_row = str(row)[0:len(str(row))-1]
+    if (trimmed_row[len(trimmed_row)-1] == ','):
+      trimmed_row = trimmed_row[0:len(trimmed_row)-1]
+    trimmed_row = trimmed_row + ")"
+    results_box.insert(END, trimmed_row)
 
 def show_example():
   results_box.delete(0, END)
