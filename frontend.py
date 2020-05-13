@@ -96,15 +96,15 @@ def show_example():
   results_box.delete(0, END)
 
   q1 = random_question()
-  while ((state["QUESTIONS"][int(q1)][0:5] == "blank") or ("add, remove" in state["QUESTIONS"][int(q1)])):
+  while ((state["QUESTIONS"][int(q1)][0:5] == "blank") or ("add, remove" in state["QUESTIONS"][int(q1)]) or (int(q1) == 97)):
     q1 = random_question()
 
   q2 = random_question()
-  while ((state["QUESTIONS"][int(q2)][0:5] == "blank") or ("add, remove" in state["QUESTIONS"][int(q2)])):
+  while ((state["QUESTIONS"][int(q2)][0:5] == "blank") or ("add, remove" in state["QUESTIONS"][int(q2)]) or (int(q2) == 97)):
     q2 = random_question()
 
   q3 = random_question()
-  while ((state["QUESTIONS"][int(q3)][0:5] == "blank") or ("add, remove" in state["QUESTIONS"][int(q3)])):
+  while ((state["QUESTIONS"][int(q3)][0:5] == "blank") or ("add, remove" in state["QUESTIONS"][int(q3)]) or (int(q3) == 97)):
     q3 = random_question()
 
   example_difficulty = state['query_count'] % 11
