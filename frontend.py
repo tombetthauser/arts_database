@@ -40,6 +40,13 @@ def clear_all():
 
 def all_columns():
   results_box.delete(0, END)
+  results_box.insert(END, 'Currently displaying all column names (which are numbers) from "data" table.')
+  results_box.insert(END, '"Data" table is the only table used in this database.')
+  results_box.insert(END, 'Use SQLite syntax and reference numbers rather than question text for all queries.')
+  results_box.insert(END, 'Check out the "Sample Query" button above or "Learn Basic SQL" link below for help writing queries.')
+  results_box.insert(END, '')
+  results_box.insert(END, '-------------------------------------------------------')
+  results_box.insert(END, '')
   for row in backend.all_columns():
     results_box.insert(END, f'{row.split(":")[0]}: {state["QUESTIONS"][int(row.split(":")[0])]}')
 
@@ -165,7 +172,7 @@ Label(window,
 Label(window, bg="#dedede", height=1).grid(row=2, column=0, columnspan=11)
 
 Label(window, 
-  text="A desktop explorer for the State of the Arts 2019 survey results.", 
+  text="A desktop explorer for the State of the Arts 2019 survey results. Built using Python3 with TkInter and SQLite3.", 
   font='Times 16', 
   relief=SUNKEN, 
   borderwidth=4,
@@ -306,17 +313,5 @@ link3 = Button(
 link3.bind("<Button-1>", lambda e: callback("https://www.w3schools.com/sql/"))
 link3.grid(row=13, column=5)
 
-Label(window, 
-  text="Built using Python3, TkInter and SQLite3, 2020.", 
-  font='Times 14', 
-  relief=FLAT, 
-  borderwidth=0,
-  fg="black", 
-  bg="#dedede", 
-  width=18, 
-  anchor=W, 
-  # padx=20, 
-  # pady=10, 
-).grid(row=13, column=7)
-
+all_columns()
 window.mainloop()
