@@ -79,9 +79,11 @@ def run_query():
         results_box.insert(END, ele[1:len(ele)])
       else:
         results_box.insert(END, ele)
-
         
+  results_box.insert(END, '')
   results_box.insert(END, '-------------------------------------------------------')
+  results_box.insert(END, '')
+  
   for row in backend.user_query(query):
     results_box.insert(END, str(row))
 
