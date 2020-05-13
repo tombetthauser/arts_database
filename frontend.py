@@ -7,6 +7,8 @@ import webbrowser
 import backend
 import os
 
+
+
 from random import seed
 from random import random
 from random import choice
@@ -303,5 +305,18 @@ link3 = Button(
 )
 link3.bind("<Button-1>", lambda e: callback("https://www.w3schools.com/sql/"))
 link3.grid(row=13, column=5)
+
+Label(window, 
+  text="Built using Python3, TkInter and SQLite3, 2020.", 
+  font='Times 14', 
+  relief=FLAT, 
+  borderwidth=0,
+  fg="black", 
+  bg="#dedede", 
+  width=18, 
+  anchor=W, 
+  # padx=20, 
+  # pady=10, 
+).grid(row=13, column=7)
 
 window.mainloop()
