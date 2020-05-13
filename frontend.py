@@ -135,6 +135,7 @@ def show_example():
   state['query_count'] = state['query_count'] + 1
   state['current_query'] = query_string
   query_text.set(query_string)
+  run_query()
 
 window = Tk()
 
