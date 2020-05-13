@@ -61,6 +61,8 @@ def all_rows():
 
 def run_query():
   results_box.delete(0, END)
+  results_box.insert(END, query_text.get())
+  results_box.insert(END, '-------------------------------------------------------')
   for row in backend.user_query(query_text.get()):
     results_box.insert(END, str(row))
 
