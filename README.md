@@ -47,14 +47,14 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 • TkInter –– python library for creating the graphic interface)
 • SQLite –– python library for talking to the data
 ```
-5. You might be asked for your main password if needed during these downloads
+5. You might be asked for your main password if needed during these downloads.
 6. If you already have these set up you can directly open the application in Terminal...
 ```
 python3 ~/Downloads/arts_dataexplorer/frontend.py
 ```
 6. Either way the application should open up, click Sample Query to get started!
 7. ***If the application doesn't open*** for any reason you can open it directly...
-8. Second click the arts_dataexplorer folder and select "New Terminal at Folder"
+8. Second click the arts_dataexplorer folder and select "New Terminal at Folder".
 9. Paste the following command into terminal and press enter...
 ```
 bash arts_dataexplorer.command
