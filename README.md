@@ -2,6 +2,7 @@
 ### A Python-Based Desktop App for Arts Survey Data
 
 A desktop application built in Python with TkInter and SQLite. Specifically to help artists, gallerists etc. explore the results from a census-style survey for visual artists and learn basic SQL.
+ ---> [download arts_dataexplorer.zip](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
 
 <br><img src="https://www.spiffystores.com.au/blog/wp-content/uploads/2014/11/Search-Magnifying-Glass.jpg" height="250px">
 
@@ -36,7 +37,7 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 # How to Use the Tool:
 1. Download the zipped version of the project folder...
 
- ---> [download arts_dataexplorer](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
+ ---> [download arts_dataexplorer.zip](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
 
 2. Go to your downloads folder and double click the zip file to uncompress it.
 3. Open the folder and **double click the arts_explorer.command file to start** the application.
