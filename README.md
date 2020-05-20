@@ -39,7 +39,7 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
  ---> [download arts_dataexplorer](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
 
 2. Go to your downloads folder and double click the zip file to uncompress it.
-3. Open the folder and ***double click the arts_explorer.command file to start*** the application.
+3. Open the folder and **double click the arts_explorer.command file to start** the application.
 4. Before starting this will check to see if you have access to the following tools...
 ```
 • Python3 –– pre-installed on most Macs)
@@ -53,19 +53,19 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 python3 ~/Downloads/arts_dataexplorer/frontend.py
 ```
 6. Either way the application should open up, click Sample Query to get started!
-7. ***If the application doesn't open*** for any reason you can open it directly...
+7. **If the application doesn't open** for any reason you can open it directly...
 8. Second click the arts_dataexplorer folder and select "New Terminal at Folder".
 9. Paste the following command into terminal and press enter...
 ```
 bash arts_dataexplorer.command
 ```
 10. If it still wont open for some reason give up and forget any of this ever happened, it's not a real application yet!
-11. Please let me know if you have any trouble so I can fix it!..
+11. **Please let me know if you have any trouble** so I can fix it!..
 ```
 tombetthauser@gmail.com or twitter @tombetthauser
 ```
 12. You can always explore the data via the survey website. [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
-13. In any case if ***it did open***, hooray!
+13. In any case if **it did open**, hooray!
 ```
 You cant break anything, mess around freely and discover something cool in the data!
 ```
