@@ -3,7 +3,7 @@ printf "\nstarting installer ⏳...\n"
 sleep 1
 
 brew_installs=( "git" "python3")
-pip3_installs=( "tkinter")
+pip3_installs=( "tk")
 python_installs=( "pip3")
 
 # brew installation
