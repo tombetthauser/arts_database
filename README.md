@@ -30,9 +30,6 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 
 <img src="https://raw.githubusercontent.com/tombetthauser/image_library/master/arts_database.png">
 
-A sample stand-alone html map page generated after running the maps generator command line tool.
-[click here to check out this sample map](https://tombetthauser.github.io/python_map/index.html)
-
 
 ***
 
@@ -53,11 +50,20 @@ A sample stand-alone html map page generated after running the maps generator co
 5. You might be asked for your main password if needed during these downloads
 6. If you already have these set up you can directly open the application in Terminal.
 ```
-$ python3 ~/Downloads/arts_dataexplorer/frontend.py
+python3 ~/Downloads/arts_dataexplorer/frontend.py
 ```
 6. Either way the application should open up, click Sample Query to get started!
+7. If the application ***doesn't open*** for any reason you can open it directly...
+a. Second click the arts_dataexplorer folder and select "New Terminal at Folder"
+b. Paste the following command into terminal and press enter.
 ```
-You cant break anything, mess around freely and discover something cool!
+bash arts_dataexplorer.command
+```
+8. If it still wont open for some reason give up and forget any of this ever happened!
+9. You can always explore the data via the survey website [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
+10. In any case if it did open, hooray!
+```
+You cant break anything, mess around freely and discover something cool in the data!
 ```
 ***  
 
