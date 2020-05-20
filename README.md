@@ -60,8 +60,12 @@ python3 ~/Downloads/arts_dataexplorer/frontend.py
 bash arts_dataexplorer.command
 ```
 10. If it still wont open for some reason give up and forget any of this ever happened, it's not a real application yet!
-11. You can always explore the data via the survey website. [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
-12. In any case if ***it did open***, hooray!
+11. Please let me know if you have any trouble so I can fix it!..
+```
+tombetthauser@gmail.com or twitter @tombetthauser
+```
+12. You can always explore the data via the survey website. [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
+13. In any case if ***it did open***, hooray!
 ```
 You cant break anything, mess around freely and discover something cool in the data!
 ```
