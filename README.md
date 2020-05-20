@@ -37,20 +37,27 @@ A sample stand-alone html map page generated after running the maps generator co
 ***
 
 # How to Use the Tool:
-1. Download and run the seperate **arts_installer** tool linked [here](https://tombetthauser.github.io/arts_installscript/installer.sh)
-2. Open your command line application (Terminal on MacOS), paste the following and hit enter to run the installer.
+1. Download the zipped version of the project folder 
+
+ ---> [download arts_dataexplorer](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
+
+2. Go to your downloads folder and double click the zip file to uncompress it.
+3. Open the folder and double click the arts_explorer.command file to start the application.
+4. Before starting this will check to see if you have access to the following tools:
 ```
-bash ~/Downloads/installer.sh
+• Python3 –– pre-installed on most Macs)
+• Brew –– to help install Python3 if needed)
+• TkInter –– python library for creating the graphic interface)
+• SQLite –– python library for talking to the data
 ```
-3. Install the Chromium tool in your Chrome web browser.
-4. Download this GitHub project with the link above.
-5. Paste the following in your command line and hit enter.
+5. You might be asked for your main password if needed during these downloads
+6. If you already have these set up you can directly open the application in Terminal.
 ```
-python3 ~/Downloads/arts_dataexplorer/frontend.py
+$ python3 ~/Downloads/arts_dataexplorer/frontend.py
 ```
-6. You should see the application window pop open.
+6. Either way the application should open up, click Sample Query to get started!
 ```
-The data is all yours, explore it and discover something cool!
+You cant break anything, mess around freely and discover something cool!
 ```
 ***  
 
