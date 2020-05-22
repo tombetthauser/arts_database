@@ -49,7 +49,7 @@ Sorry in advance! 😕
 1. If you get a popup after you double-click the application file about permissions need to be changed, open up your Terminal application (hit command + space, then type "Terminal", then hit enter).
 2. Then paste the following code into your command line...
 ```
-chmod u+x ~/Downloads/bash_work/bash_work.command
+chmod u+x ~/Downloads/arts_dataexplorer/arts_dataexplorer.command
 ```
 3. This will let the computer know you want to be able to open the app directly.
 4. If you're a regular Terminal user make sure that file path there makes sense.
@@ -62,7 +62,7 @@ bash arts_dataexplorer.command
 ```
 tombetthauser@gmail.com / twitter: @tombetthauser
 ```
-## Just so you know...
+## As it's opening up...
 1. Before starting the application will check to see if you have access to the following tools...
 ```
 • python3 –– pre-installed on most Macs
