@@ -35,40 +35,55 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 ***
 
 # How to Use the Tool:
+```
+Note that for now this app is only set up to work with Unix based systems (MacOS and Linux).
+Sorry in advance! 😕
+```
 1. Download the zipped version of the project folder...
 
  ---> [download arts_dataexplorer.zip](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
 
 2. Go to your downloads folder and double click the zip file to uncompress it.
 3. Open the folder and **double click the arts_explorer.command file to start** the application.
-4. Before starting this will check to see if you have access to the following tools...
+## If you encounter an issue...
+1. If you get a popup after you double-click the application file about permissions need to be changed, open up your Terminal application (hit command + space, then type "Terminal", then hit enter).
+2. Then paste the following code into your command line...
 ```
-• Python3 –– pre-installed on most Macs)
-• Brew –– to help install Python3 if needed)
-• TkInter –– python library for creating the graphic interface)
-• SQLite –– python library for talking to the data
+chmod u+x ~/Downloads/bash_work/bash_work.command
 ```
-5. You might be asked for your main password if needed during these downloads.
-6. If you already have these set up you can directly open the application in Terminal...
-```
-python3 ~/Downloads/arts_dataexplorer/frontend.py
-```
-6. Either way the application should open up, click Sample Query to get started!
-7. **If the application doesn't open** for any reason you can open it directly...
-8. Second click the arts_dataexplorer folder and select "New Terminal at Folder".
-9. Paste the following command into terminal and press enter...
+3. This will let the computer know you want to be able to open the app directly.
+4. If you're a regular Terminal user make sure that file path there makes sense.
+5. You can also open the file directly through Terminal with this command...
 ```
 bash arts_dataexplorer.command
 ```
-10. If it still wont open for some reason give up and forget any of this ever happened, it's not a real application yet!
-11. **Please let me know if you have any trouble** so I can fix it!..
+6. If it still wont open for some reason give up and forget any of this ever happened, this tool is still under construction!
+7. **Please let me know if you have any trouble** so I can fix it!..
 ```
-tombetthauser@gmail.com or twitter @tombetthauser
+tombetthauser@gmail.com / twitter: @tombetthauser
 ```
-12. You can always explore the data via the survey website. [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
-13. In any case if **it did open**, hooray!
+## Just so you know...
+1. Before starting the application will check to see if you have access to the following tools...
 ```
-You cant break anything, mess around freely and discover something cool in the data!
+• python3 –– pre-installed on most Macs
+• brew –– to help install Python3 if needed
+• tkinter –– python library for creating the graphic interface
+• sqlite –– python library for talking to the data
+```
+2. You might be asked for your main password if needed during these downloads.
+3. If you already have these set up you can directly open the application in Terminal...
+```
+python3 ~/Downloads/arts_dataexplorer/frontend.py
+```
+
+## Once you've got the application open...
+1. Click Sample Query to get started and see what happens!
+2. Start playing around with the SQL syntax and see how things change.
+3. If the SQL Queries are confusing **don't be intimidated** they're actually very simple to figurea out. Just check out the link at the bottom of the app to pick up some of the basics :)
+4. You can always explore a non-interactive version of the data via the survey website also. [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
+```
+You cant break anything so mess around freely. 🎉
+Don't be intimidated and discover something cool in the data!
 ```
 ***  
 
