@@ -47,18 +47,22 @@ Sorry in advance! 😕
 3. Open the folder and **double click the arts_explorer.command file to start** the application.
 ## If you encounter an issue...
 1. If you get a popup after you double-click the application file about permissions need to be changed, open up your Terminal application (hit command + space, then type "Terminal", then hit enter).
-2. Then paste the following code into your command line...
+2. Then paste the following code into your command line and hit enter...
 ```
 chmod u+x ~/Downloads/arts_dataexplorer/arts_dataexplorer.command
 ```
-3. This will let the computer know you want to be able to open the app directly.
-4. If you're a regular Terminal user make sure that file path there makes sense.
-5. You can also open the file directly through Terminal with this command...
+3. Then enter the following, hit enter and confirm your password...
+```
+sudo spctl --master-disable
+```
+4. This will let the computer know you want to be able to open the app directly.
+5. If you're a regular Terminal user make sure that file path there makes sense.
+6. You can also open the file directly through Terminal with this command...
 ```
 bash arts_dataexplorer.command
 ```
-6. If it still wont open for some reason give up and forget any of this ever happened, this tool is still under construction!
-7. **Please let me know if you have any trouble** so I can fix it!..
+7. If it still wont open for some reason give up and forget any of this ever happened, this tool is still under construction!
+8. **Please let me know if you have any trouble** so I can fix it!..
 ```
 tombetthauser@gmail.com / twitter: @tombetthauser
 ```
