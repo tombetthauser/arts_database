@@ -7,8 +7,6 @@ import webbrowser
 import backend
 import os
 
-
-
 from random import seed
 from random import random
 from random import choice
