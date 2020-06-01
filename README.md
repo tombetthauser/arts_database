@@ -27,9 +27,9 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 ***
 
 
-# Example Image:
+# Example Gif:
 
-<img src="https://raw.githubusercontent.com/tombetthauser/image_library/master/arts_database.png">
+<img src="https://raw.githubusercontent.com/tombetthauser/arts_dataexplorer/program_files/arts_database.gif">
 
 
 ***
