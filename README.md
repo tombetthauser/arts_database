@@ -4,7 +4,7 @@
 A desktop application built in Python with TkInter and SQLite. Specifically to help artists, gallerists etc. explore the results from a census-style survey for visual artists and learn basic SQL.
  ---> [download arts_dataexplorer.zip](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
 
-<br><img src="https://www.spiffystores.com.au/blog/wp-content/uploads/2014/11/Search-Magnifying-Glass.jpg" height="250px">
+<br><img src="https://raw.githubusercontent.com/tombetthauser/image_library/master/data_explorer.png" height="250px">
 
 
 ***
