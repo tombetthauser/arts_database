@@ -2,6 +2,7 @@
 ### A Python-Based Desktop App for Arts Survey Data
 
 A desktop application built in Python with TkInter and SQLite. Specifically to help artists, gallerists etc. explore the results from a census-style survey for visual artists and learn basic SQL.
+ ---> [download arts_dataexplorer.zip](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
 
 <br><img src="https://www.spiffystores.com.au/blog/wp-content/uploads/2014/11/Search-Magnifying-Glass.jpg" height="250px">
 
@@ -13,7 +14,7 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 
 ### Current Functions / Features:
 1. Convert the original survey data from csv to **SQLite** format.
-2. Use **Pandas** library to make SQL queries through **Python**.
+2. Use **SQLite** library to make SQL queries through **Python**.
 3. Create a minimal **Desktop GUI** using the **TkInter** library for users.
 
 ### Stretch Goals:
@@ -30,27 +31,59 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 
 <img src="https://raw.githubusercontent.com/tombetthauser/image_library/master/arts_database.png">
 
-A sample stand-alone html map page generated after running the maps generator command line tool.
-[click here to check out this sample map](https://tombetthauser.github.io/python_map/index.html)
-
 
 ***
 
 # How to Use the Tool:
-1. Download and run the seperate **arts_installer** tool linked [here](https://tombetthauser.github.io/arts_installscript/installer.sh)
-2. Open your command line application (Terminal on MacOS), paste the following and hit enter to run the installer.
 ```
-bash ~/Downloads/installer.sh
+Note that for now this app is only set up to work with Unix based systems (MacOS and Linux).
+Sorry in advance! 😕
 ```
-3. Install the Chromium tool in your Chrome web browser.
-4. Download this GitHub project with the link above.
-5. Paste the following in your command line and hit enter.
+1. Download the zipped version of the project folder...
+
+ ---> [download arts_dataexplorer.zip](https://github.com/tombetthauser/arts_dataexplorer/raw/master/program_files/other_files/arts_dataexplorer.zip)
+
+2. Go to your downloads folder and double click the zip file to uncompress it.
+3. Open the folder and **double click the arts_explorer.command file to start** the application.
+## If you encounter an issue...
+1. If you get a popup after you double-click the application file about permissions need to be changed, open up your Terminal application (hit command + space, then type "Terminal", then hit enter).
+2. Then paste the following code into your command line...
+```
+chmod u+x ~/Downloads/arts_dataexplorer/arts_dataexplorer.command
+```
+3. This will let the computer know you want to be able to open the app directly.
+4. If you're a regular Terminal user make sure that file path there makes sense.
+5. You can also open the file directly through Terminal with this command...
+```
+bash arts_dataexplorer.command
+```
+6. If it still wont open for some reason give up and forget any of this ever happened, this tool is still under construction!
+7. **Please let me know if you have any trouble** so I can fix it!..
+```
+tombetthauser@gmail.com / twitter: @tombetthauser
+```
+## As it's opening up...
+1. Before starting the application will check to see if you have access to the following tools...
+```
+• python3 –– pre-installed on most Macs
+• brew –– to help install Python3 if needed
+• tkinter –– python library for creating the graphic interface
+• sqlite –– python library for talking to the data
+```
+2. You might be asked for your main password if needed during these downloads.
+3. If you already have these set up you can directly open the application in Terminal...
 ```
 python3 ~/Downloads/arts_dataexplorer/frontend.py
 ```
-6. You should see the application window pop open.
+
+## Once you've got the application open...
+1. Click Sample Query to get started and see what happens!
+2. Start playing around with the SQL syntax and see how things change.
+3. If the SQL Queries are confusing **don't be intimidated** they're actually very simple to figurea out. Just check out the link at the bottom of the app to pick up some of the basics :)
+4. You can always explore a non-interactive version of the data via the survey website also. [www.SotaSurvey.org/2019](http://www.sotasurvey.org/2019)
 ```
-The data is all yours, explore it and discover something cool!
+You cant break anything so mess around freely. 🎉
+Don't be intimidated and discover something cool in the data!
 ```
 ***  
 
