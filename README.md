@@ -29,7 +29,7 @@ A desktop application built in Python with TkInter and SQLite. Specifically to h
 
 # Example Gif:
 
-<img src="https://raw.githubusercontent.com/tombetthauser/arts_dataexplorer/program_files/other_files/arts_dataexplorer.gif">
+<img src="https://raw.githubusercontent.com/tombetthauser/arts_dataexplorer/master/program_files/other_files/arts_dataexplorer.gif">
 
 
 ***
