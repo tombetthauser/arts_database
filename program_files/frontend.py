@@ -52,7 +52,8 @@ def all_columns():
   results_box.insert(END, '-------------------------------------------------------')
   results_box.insert(END, '')
 
-  os.system(f"echo {'Currently displaying all column names (which are numbers) from "data" table. "Data" table is the only table used in this database. Use SQLite syntax and reference numbers rather than question text for all queries. Check out the "Sample Query" button above or "Learn Basic SQL" link below for help writing queries.'} >> {state.log_file}")
+  os.system(f"echo 'Currently displaying all column names (which are numbers) from data table. \nData table is the only table used in this database. Use SQLite syntax and reference numbers rather than\n question text for all queries. Check out the Sample Query button above or Learn Basic SQL link below for help writing queries.' >> {state['log_file']}")
+  # 
 
   for row in backend.all_columns():
     results_box.insert(END, f'{row.split(":")[0]}: {state["QUESTIONS"][int(row.split(":")[0])]}')
@@ -64,7 +65,8 @@ def all_rows():
     results_box.insert(END, row)
 
 def create_newlog():
-  os.system(f"touch log_{round(time.time()) % 1000000}.txt")
+  state['log_file'] = f"log_{round(time.time()) % 1000000}.txt"
+  os.system(f"touch {state['log_file']}")
 
 # def save_results():
 #   print('-------------')
