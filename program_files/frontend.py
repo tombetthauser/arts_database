@@ -52,11 +52,14 @@ def all_columns():
   results_box.insert(END, '-------------------------------------------------------')
   results_box.insert(END, '')
 
-  os.system(f"echo 'Currently displaying all column names (which are numbers) from data table. \nData table is the only table used in this database. Use SQLite syntax and reference numbers rather than\n question text for all queries. Check out the Sample Query button above or Learn Basic SQL link below for help writing queries.' >> {state['log_file']}")
-  # 
+  os.system(f"echo 'Currently displaying all column names (which are numbers) from data table. Data table is the only table used in this database. Use SQLite syntax and reference numbers rather than question text for all queries. Check out the Sample Query button above or Learn Basic SQL link below for help writing queries.' >> {state['log_file']}")
+  os.system("\n\n")
 
   for row in backend.all_columns():
-    results_box.insert(END, f'{row.split(":")[0]}: {state["QUESTIONS"][int(row.split(":")[0])]}')
+    question_string = f'{row.split(":")[0]}: {state["QUESTIONS"][int(row.split(":")[0])]}'
+    results_box.insert(END, question_string)
+    os.system(f"echo '{question_string}' >> {state['log_file']}")
+    os.system("\n")
 
 def all_rows():
   results_box.delete(0, END)

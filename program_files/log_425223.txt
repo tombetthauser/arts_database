@@ -1,0 +1,104 @@
+Currently displaying all column names (which are numbers) from data table. Data table is the only table used in this database. Use SQLite syntax and reference numbers rather than question text for all queries. Check out the Sample Query button above or Learn Basic SQL link below for help writing queries.
+0: Timestamp
+1: What is your gender?
+2: What is your ethnicity / race?
+3: Do you currently identify as LGBTQ+?
+4: What is your age?
+5: How did you hear about this survey?
+6: What 5 - 15 key words would you currently associate with your artwork, subject matters, mediums etc? Separate with commas. (i.e. figurative, muted color, social issues, air brush, interdisciplinary etc.)
+7: Are there any questions you would add, remove or change in section 1?
+8: How much of a priority was exhibiting your work this past year?
+9: How many group exhibitions were you in this past year?
+10: How many solo exhibitions did you have this past year?
+11: How many exhibitions did you apply for this past year?
+12: Roughly how much did you pay total in application fees for exhibitions this past year?
+13: What kinds of exhibition spaces / venues did you show in this past year? (check any that apply)
+14: Roughly how many times was your work written about in an online or print publication this past year? 
+15: Roughly how many times was your work featured / re-posted by someone else on social media this past year?
+16: How did your exhibition opportunities this year come about? (check any that apply)
+17: How many shows / events / books etc. did you help organize this past year? (not related to job duties)
+18: Did you have official gallery representation this past year? (listed officially on their website)
+19: Were you given any kind of legal paperwork (contract, loan agreement, tax document etc.) by a gallerist, art dealer or collector this past year?
+20: How much of a priority was applying for residencies or grants this past year?
+21: How many residencies did you apply for this past year?
+22: How many residencies did you attend this past year?
+23: How many grants did you apply for this past year?
+24: How many grants did you receive in total this past year?
+25: Roughly how much did you receive in total grants this year?
+26: Are there any questions you would add, remove or change in section 2?
+27: How much of a priority was selling your art or art-related work this past year?
+28: Who did you sell art or art-related work to this past year? (check any that apply or add other)
+29: How did you make art-related sales this past year? (check any that apply)
+30: Roughly how much money did you make from art-related sales this year?
+31: What kinds of work did you sell this past year? Separate with commas. If none, leave blank. (i.e. paintings, etchings, t-shirts etc.)
+32: How would you rate the overall treatment you received from the collectors / buyers you worked with this past year?
+33: Did you use any of the following platforms to make sales this past year? Check any that apply.
+34: How much of a priority was having studio visits for you this past year?
+35: Roughly how many studio visits did you have this past year?
+36: Whom did you have one or more studio visits this past year? (check any that apply or leave blank if none)
+37: How did your studio visits this year come about? (check any that apply or leave blank if none)
+38: Are there any questions you would add, remove or change in section 3?
+39: How much of a priority was social media use for you / your studio this past year?
+40: Roughly how often did you create Facebook posts related to your artwork or exhibitions this past year?
+41: Did you use Facebook more or less this past year than the previous year?
+42: Roughly how often did you create Instagram posts related to your artwork or exhibitions this past year?
+43: Did you use Instagram more or less this past year than the previous year?
+44: Did you pay for any social media promotion this past year? If so did it have a noticeable positive impact?
+45: How well do you feel your primary social media platform served you / your studio practice this past year? (10 being the best possible score)
+46: What aspects of your primary social media platform did you think worked well for you / your studio this past year? (i.e. public likes, follower counts, order of posts in feed etc.)
+47: What aspects of your primary social media platform did you think worked poorly or were problematic for you / your studio this past year?
+48: Did you maintain a personal art / studio website this past year (i.e. www .yourname .com etc.) that was not on a social media platform?
+49: Did you maintain a personal art / studio website at any point during 2016?
+50: What other resources did you use frequently this past year for finding art-related content? (check all that apply)
+51: Are there any questions you would add, remove or change in section 4?
+52: What type of work space did you use this past year? (check any that apply)
+53: Roughly how large is your current personal work space?
+54: How much did you pay for your most recent month of studio space rent?
+55: On an average week how many days did you get to work in your studio this past year? (counting half or partial days)
+56: On an average studio day how much time did you spend in your studio space? (working / reading / thinking etc.)
+57: Are there any questions you would add, remove or change in section 5?
+58: What types of jobs did you have this year?
+59: Did you apply for or receive unemployment benefits or food stamps this year?
+60: Roughly how many jobs did you apply for this year?
+61: Roughly how much did you make in job-related income this year? (not including art sales)
+62: Did you claim any art / studio expenses on any tax return filed this past year?
+63: Are there any questions you would add, remove or change in section 6?
+64: What is your highest level of education? Choose the most specific / appropriate answer.
+65: Are you currently a student?
+66: If you are currently a student what school do you attend?
+68: How would you rate your educational experience overall? (1 being poor, 10 being exceptional)
+69: Roughly how much do you currently owe in student loans? (if currently a student estimate loans upon graduation)
+70: Roughly how much was your most recent monthly student loan payment?
+71: Are there any questions you would add, remove or change in section 7?
+72: What neighborhood and city do you currently live in? Separate with commas. (i.e. Korea Town, Los Angeles)
+73: What neighborhood and city did you live in at the end of 2016?
+74: What are the most important benefits of your current city or neighborhood? Separate with commas. (i.e. diverse population, affordability, safety, good weather)
+75: Are there any questions you would add, remove or change in section 8?
+76: How much of a priority was visiting galleries / museums for you this past year?
+77: Roughly how many gallery receptions / openings did you attend in total this past year?
+78: Roughly how many times did you attend an art fair or biennial this past year?
+79: How many new galleries can you personally think of that opened this past year in your city? (don’t overthink it)
+80: How many galleries can you personally think of that closed this past year in your city? (don’t overthink it)
+81: Are there any questions you would add, remove or change in section 9?
+82: What schools did you teach for this past year? (optional)
+83: How many classes did you teach in your most recent semester?
+84: How many campuses did you teach at in your most recent semester?
+85: How would you rate the overall work environment of your school or schools this past year?
+86: Were you a part of a union this past year?
+87: What additional duties aside from teaching did you perform for your school or schools this past year? Separate with commas, if none leave blank.
+88: Were you explicitly paid for these extra duties?
+89: Are there any questions you would add, remove or change in section 10?
+90: Roughly how long did you spend filling out this survey?
+91: Do you feel you were generally welcomed and embraced by the art world this past year?
+92: Do you feel that you or your career may have been significantly negatively effected by any type of discrimination or bias this past year?
+93: Are there any arts institutions, galleries etc. that you would like to anonymously cite for outstanding service to artists or communities this past year? Separate by commas, if none leave blank.
+94: Are there any arts institutions, galleries etc. that you would like to anonymously cite for harming artists or communities this past year? Separate by commas, if none leave blank.
+95: Are there any questions you would add, remove or change in this final section?
+96: Are there any sections you would add or remove completely from this survey?
+97: Do you have any final thoughts regarding this survey?
+98: blank column 1
+99: blank column 2
+100: blank column 3
+101: blank column 4
+102: blank column 5
+103: blank column 6

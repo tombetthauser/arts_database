@@ -1,1 +1,0 @@
-Currently displaying all column names (which are numbers) from data table. Data table is the only table used in this database. Use SQLite syntax and reference numbers rather than question text for all queries. Check out the Sample Query button above or Learn Basic SQL link below for help writing queries.
