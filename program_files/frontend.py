@@ -20,6 +20,11 @@ state = {
     'query_count': 0
 }
 
+class DataLog:
+  def __init__(self):
+    self.file_name = f"log_{round(time.time()) % 1000000}.txt" 
+    os.system(f"touch {self.file_name}")
+
 questions_list = list(
   map(lambda name: 
       " ".join(name.split(" ")[1:]
@@ -54,9 +59,6 @@ def all_rows():
   for row in backend.all_rows():
     print(type(row))
     results_box.insert(END, row)
-
-def create_newlog():
-  os.system(f"touch log_{round(time.time()) % 1000000}.txt")
 
 # def save_results():
 #   print('-------------')
@@ -315,7 +317,7 @@ link3 = Button(
 link3.bind("<Button-1>", lambda e: callback("https://www.w3schools.com/sql/"))
 link3.grid(row=13, column=5)
 
+log = DataLog()
+
 all_columns()
 window.mainloop()
-
-create_newlog()
