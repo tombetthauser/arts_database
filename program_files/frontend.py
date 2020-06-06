@@ -148,6 +148,9 @@ def show_example():
   query_text.set(query_string)
   run_query()
 
+
+# ------------------------------------------------------------ Window
+
 window = Tk()
 
 window.title("Arts Database Explorer 1.0")
@@ -187,6 +190,10 @@ Label(window,
 ).grid(row=3, column=1, columnspan=9)
 
 Label(window, bg="#dedede", height=1).grid(row=4, column=0, columnspan=11)
+
+
+
+# ------------------------------------------------------------ Buttons
 
 Button(window, 
   highlightbackground='#777',
@@ -241,6 +248,10 @@ Button(window,
   anchor=W,
   width=18,
 ).grid(row='5', column='9')
+
+
+
+# ------------------------------------------------------------ Labels
 
 Label(window,
   text="Enter your SQL query here:",
