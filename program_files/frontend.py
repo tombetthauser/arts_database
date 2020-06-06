@@ -5,6 +5,7 @@ from tkinter import ttk
 from tkinter import *
 import webbrowser
 import backend
+import time
 import os
 
 from random import seed
@@ -53,6 +54,9 @@ def all_rows():
   for row in backend.all_rows():
     print(type(row))
     results_box.insert(END, row)
+
+def create_newlog():
+  os.system(f"touch log_{round(time.time()) % 1000000}.txt")
 
 # def save_results():
 #   print('-------------')
@@ -313,3 +317,5 @@ link3.grid(row=13, column=5)
 
 all_columns()
 window.mainloop()
+
+create_newlog()
